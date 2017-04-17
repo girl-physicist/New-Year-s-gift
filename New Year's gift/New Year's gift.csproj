@@ -43,11 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Gift.cs" />
+    <Compile Include="Classes\Sweet.cs" />
+    <Compile Include="Interfaces\ICandy.cs" />
+    <Compile Include="Interfaces\IChocolate.cs" />
+    <Compile Include="Interfaces\IGift.cs" />
+    <Compile Include="Interfaces\ISweetness.cs" />
+    <Compile Include="Interfaces\TypeOfCandy.cs" />
+    <Compile Include="Interfaces\TypeOfChocolate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
