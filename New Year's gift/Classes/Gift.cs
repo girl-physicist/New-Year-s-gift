@@ -9,14 +9,16 @@ namespace New_Year_s_gift.Classes
 {
     class Gift : IGift
     {
-        private ICollection<ISweetness> items;
-
-        public IEnumerable<ISweetness> Items
+        public string GiftName
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
+           
+        }
+
+        public ICollection<ISweetness> items
+        {
+            get;
+           
         }
 
         public void Add(Sweet sweets)
@@ -27,16 +29,22 @@ namespace New_Year_s_gift.Classes
         public IEnumerable<ISweetness> FindCandyBySugar(int min, int max)
         {
             throw new NotImplementedException();
+            //Where()
         }
 
         public double GiftWeight()
         {
-            throw new NotImplementedException();
+                if (items != null)
+                { return items.Sum(x => x.Weight); }
+                else
+                { throw new InvalidOperationException("Conteiner in Salad cannot be null"); }
+            //sum()
         }
 
         public void Sort()
         {
             throw new NotImplementedException();
+            // OrderBy();
         }
     }
 }

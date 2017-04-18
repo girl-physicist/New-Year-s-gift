@@ -9,10 +9,10 @@ namespace New_Year_s_gift.Interfaces
     public interface ISweetness
     {
         double SugarPerUnit { get; }
-        double weight { get; }
-        string name { get; }
+        double Weight { get; }
+        string Name { get; }
         double CaloriPerUnit { get; }
-        double price { get; }
+        double Price { get; }
         void TypeOfSweetness();
         //halva
         //kozinaki

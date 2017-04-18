@@ -11,47 +11,36 @@ namespace New_Year_s_gift.Classes
     {
         public double CaloriPerUnit
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
         }
-
-        public string name
+        public string Name
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
         }
-
-        public double price
+        public double Price
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
         }
-
         public double SugarPerUnit
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
         }
-
-        public double weight
+        public double Weight
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
         }
-
         public void TypeOfSweetness()
         {
             throw new NotImplementedException();
+        }
+
+        public Sweet(string name, double weight, double price, double sugar, double calories)
+        {
+            Name = name;
+            Weight = weight;
+            Price = price;
+            SugarPerUnit = sugar;
+            CaloriPerUnit = calories;
         }
     }
 }

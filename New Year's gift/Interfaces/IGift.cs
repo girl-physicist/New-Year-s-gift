@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace New_Year_s_gift.Interfaces
 {
-    
-     public interface IGift
+
+    public interface IGift
     {
-        IEnumerable<ISweetness> Items { get; }
+        ICollection<ISweetness> items { get; }
+        string GiftName { get; }
         void Add(Sweet sweets);
         double GiftWeight();
         //void ShowItems(); 

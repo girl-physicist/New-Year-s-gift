@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Candy.cs" />
+    <Compile Include="Classes\Chocolate.cs" />
     <Compile Include="Classes\Gift.cs" />
     <Compile Include="Classes\Sweet.cs" />
-    <Compile Include="Interfaces\ICandy.cs" />
-    <Compile Include="Interfaces\IChocolate.cs" />
+    <Compile Include="Factory\Creator.cs" />
+    <Compile Include="Factory\CreatorOfCandy.cs" />
+    <Compile Include="Factory\CreatorOfChocolate.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
-    <Compile Include="Interfaces\TypeOfCandy.cs" />
-    <Compile Include="Interfaces\TypeOfChocolate.cs" />
+    <Compile Include="TypeOfCandy.cs" />
+    <Compile Include="TypeOfChocolate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,9 +63,7 @@
   <ItemGroup>
     <Content Include="README.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Factory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

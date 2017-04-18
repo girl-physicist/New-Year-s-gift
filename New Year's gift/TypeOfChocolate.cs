@@ -1,4 +1,4 @@
-﻿namespace New_Year_s_gift.Interfaces
+﻿namespace New_Year_s_gift
 {
    public enum TypeOfChocolate
     {
