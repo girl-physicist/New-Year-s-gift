@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>New_Year_s_gift</RootNamespace>
-    <AssemblyName>New Year%27s gift</AssemblyName>
+    <AssemblyName>New Years gift</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,7 @@
     <Compile Include="Factory\CreatorOfChocolate.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
+    <Compile Include="Show.cs" />
     <Compile Include="TypeOfCandy.cs" />
     <Compile Include="TypeOfChocolate.cs" />
     <Compile Include="Program.cs" />

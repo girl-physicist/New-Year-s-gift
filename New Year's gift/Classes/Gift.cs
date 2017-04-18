@@ -9,42 +9,53 @@ namespace New_Year_s_gift.Classes
 {
     class Gift : IGift
     {
+        private ICollection<Sweet> items;
+        public Gift()
+        {
+            items = new List<Sweet>();
+        }
         public string GiftName
         {
             get;
-           
         }
 
-        public ICollection<ISweetness> items
-        {
-            get;
-           
-        }
+
 
         public void Add(Sweet sweets)
         {
-            throw new NotImplementedException();
+            items.Add(sweets);
         }
 
-        public IEnumerable<ISweetness> FindCandyBySugar(int min, int max)
+        public IEnumerable<Sweet> FindCandyBySugar(int min, int max)
         {
-            throw new NotImplementedException();
+           
             //Where()
+            return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
         }
-
         public double GiftWeight()
         {
-                if (items != null)
-                { return items.Sum(x => x.Weight); }
-                else
-                { throw new InvalidOperationException("Conteiner in Salad cannot be null"); }
-            //sum()
+            if (items != null)
+            { return items.Sum(x => x.Weight); }
+            else
+            { throw new InvalidOperationException("Conteiner in Salad cannot be null"); }
         }
-
         public void Sort()
         {
-            throw new NotImplementedException();
-            // OrderBy();
+            var temp = items.OrderBy(x => x.Weight).ToList();
+            items.Clear();
+            foreach (var item in temp)
+            {
+                items.Add(item);
+            }
+        }
+        public IEnumerable<Sweet> Items
+        {
+            get { return this.items; }
+        }
+
+        ICollection<Sweet> IGift.items
+        {
+            get;
         }
     }
 }

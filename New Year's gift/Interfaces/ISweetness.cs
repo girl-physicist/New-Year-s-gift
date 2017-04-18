@@ -13,10 +13,8 @@ namespace New_Year_s_gift.Interfaces
         string Name { get; }
         double CaloriPerUnit { get; }
         double Price { get; }
-        void TypeOfSweetness();
-        //halva
-        //kozinaki
-        //zephyr
-        //pastille
+        void GetTypeOfSweetness();
     }
+
+    
 }

@@ -29,11 +29,6 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public void TypeOfSweetness()
-        {
-            throw new NotImplementedException();
-        }
-
         public Sweet(string name, double weight, double price, double sugar, double calories)
         {
             Name = name;
@@ -41,6 +36,12 @@ namespace New_Year_s_gift.Classes
             Price = price;
             SugarPerUnit = sugar;
             CaloriPerUnit = calories;
+          
+        }
+        public void GetTypeOfSweetness()
+        {
+            Console.WriteLine("TypeOfSweetness"); //????????????????????????????
+            Console.ReadKey();
         }
     }
 }
