@@ -16,8 +16,8 @@ namespace New_Year_s_gift.Factory
             return new Chocolate(chocoName, chocoWeight, chocoPrice, chocoSugar, chocoCalories, typeOfChocolate);
         }
 
-        public override Sweet FactoryMethod(string name, double weight, double price, double SugarPerUnit,
-            double CaloriPerUnit, TypeOfCandy TypeOfCandy)
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit,
+            double caloriPerUnit, TypeOfCandy typeOfCandy)
         {
             throw new NotImplementedException();
         }

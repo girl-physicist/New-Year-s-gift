@@ -30,6 +30,7 @@ namespace New_Year_s_gift
                 if (i is CreatorOfChocolate)
                 {
                     gift.Add(i.FactoryMethod("Alpen Gold", 100, 115, 250, 450,TypeOfChocolate.Milk));
+                    gift.Add(i.FactoryMethod("Алёнка", 100, 115, 250, 450, TypeOfChocolate.Milk));
                 }
             }
 

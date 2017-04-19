@@ -10,8 +10,8 @@ namespace New_Year_s_gift.Factory
 {
     public abstract class Creator
     {
-        public abstract Sweet FactoryMethod(string name, double weight, double price, double SugarPerUnit, double CaloriPerUnit, TypeOfCandy TypeOfCandy);
-        public abstract Sweet FactoryMethod(string name, double weight, double price, double SugarPerUnit, double CaloriPerUnit, TypeOfChocolate TypeOfChocolate);
+        public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfCandy typeOfCandy);
+        public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfChocolate typeOfChocolate);
 
 
 

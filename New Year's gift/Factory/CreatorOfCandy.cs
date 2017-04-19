@@ -10,8 +10,8 @@ namespace New_Year_s_gift.Factory
 {
     class CreatorOfCandy : Creator
     {
-        public override Sweet FactoryMethod(string name, double weight, double price, double SugarPerUnit, 
-            double CaloriPerUnit, TypeOfChocolate TypeOfChocolate)
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, 
+            double caloriPerUnit, TypeOfChocolate typeOfChocolate)
         {
             throw new NotImplementedException();
         }
