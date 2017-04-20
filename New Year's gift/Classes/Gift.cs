@@ -4,35 +4,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace New_Year_s_gift.Classes
 {
     class Gift : IGift
     {
-      private ICollection<Sweet> items;// нигде не присваивается значение
-        ICollection<Sweet> IGift.items // ??????????????????????
+        private ICollection<Sweet> items;
+        public Gift(string name)
         {
-            get;
-        }
-        public string GiftName
-        {
-            get; 
+            items = new List<Sweet>();
+            GiftName = name;
         }
         public void Add(Sweet sweets)
         {
-            items.Add(sweets);///// Error!!!
-        }
-        public IEnumerable<Sweet> FindCandyBySugar(int min, int max)
-        {
-            return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
+            items.Add(sweets);
         }
         public double GiftWeight()
         {
-            if (items != null)
-            { return items.Sum(x => x.Weight); }
-            else
-            { throw new InvalidOperationException("Conteiner in Gift cannot be null"); }
+            return items.Sum(x => x.Weight);
         }
+
         public void Sort()
         {
             var temp = items.OrderBy(x => x.Weight).ToList();
@@ -41,6 +33,21 @@ namespace New_Year_s_gift.Classes
             {
                 items.Add(item);
             }
+        }
+
+        public IEnumerable<Sweet> FindCandyBySugar(int min, int max)
+        {
+            return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
+        }
+        public ICollection<Sweet> Items
+        {
+            get { return this.items; }
+        }
+
+        public string GiftName
+        {
+            get;
+
         }
     }
 }

@@ -10,7 +10,7 @@ namespace New_Year_s_gift.Interfaces
 
     public interface IGift
     {
-        ICollection<Sweet> items { get; }
+        ICollection<Sweet> Items { get; }
         string GiftName { get; }
         void Add(Sweet sweets);
         double GiftWeight();

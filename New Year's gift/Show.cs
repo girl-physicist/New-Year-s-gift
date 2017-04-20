@@ -11,11 +11,11 @@ namespace New_Year_s_gift
     {
         public static void ShowItems(this IGift gift)
         {
-            Console.WriteLine("Набор конфет: ");
-            foreach (var i in gift.items)
+            Console.WriteLine(gift.GiftName);
+            foreach (var i in gift.Items)
             {
-                Console.WriteLine("Название конфеты: {0}, Вес конфеты: {1}, Сахар: {2}, Калории: {3}, Цена: {4}"
-                    , i.Name, i.Weight, i.SugarPerUnit, i.CaloriPerUnit, i.Price);
+                Console.WriteLine("Name of sweetnes: {0}, Weight: {1}, SugarPerUnit: {2}, CaloriPerUnit: {3}, Price: {4}, TypeOfSweetness {5}"
+                    , i.Name, i.Weight, i.SugarPerUnit, i.CaloriPerUnit, i.Price,i.GetTypeOfSweetness);
 
             }
 
