@@ -36,12 +36,10 @@ namespace New_Year_s_gift.Classes
             Price = price;
             SugarPerUnit = sugar;
             CaloriPerUnit = calories;
-          
         }
-        public void GetTypeOfSweetness()
+        public virtual string GetTypeOfSweetness
         {
-            Console.WriteLine("TypeOfSweetness"); //????????????????????????????
-            Console.ReadKey();
+            get;
         }
     }
 }

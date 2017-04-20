@@ -7,20 +7,21 @@ using System.Threading.Tasks;
 
 namespace New_Year_s_gift.Classes
 {
-    class Candy : Sweet
+    class Candy : Sweet, ICandy
     {
-        public TypeOfCandy TypeOfCandy;
+        public TypeOfCandy TypeOfCandy
+        {
+            get;
+        }
         public Candy(string name, double weight, double price, double sugar, double calories, TypeOfCandy typeOfCandy)
             : base(name, weight, price, sugar, calories)
         {
             TypeOfCandy = typeOfCandy;
         }
         //???????????????????
-        public new void GetTypeOfSweetness()
+        public override string GetTypeOfSweetness
         {
-            string type = "Candy";
-            Console.WriteLine(type);
-            Console.ReadKey();
+            get { return "Candy"; }
         }
     }
 }
