@@ -12,8 +12,8 @@ namespace New_Year_s_gift.Factory
     {
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfCandy typeOfCandy);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfChocolate typeOfChocolate);
-
-
-
+        public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfHalva typeOfHalva);
+        public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfKozinak typeOfKozinak);
+        public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows);
     }
 }

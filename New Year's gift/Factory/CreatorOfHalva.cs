@@ -10,16 +10,34 @@ namespace New_Year_s_gift.Factory
 {
     class CreatorOfHalva : Creator
     {
-        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, 
-            double caloriPerUnit, TypeOfChocolate typeOfChocolate)
+        public override Sweet FactoryMethod(string halvaName, double halvaWeight, double halvaPrice, double halvaSugar
+            , double halvaCalories, TypeOfHalva typeOfHalva)
+        {
+            return new Halva(halvaName, halvaWeight, halvaPrice, halvaSugar, halvaCalories, typeOfHalva);
+        }
+
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfCandy typeOfCandy)
         {
             throw new NotImplementedException();
         }
 
-        public override Sweet FactoryMethod(string candyName, double candyWeight, double candyPrice, 
-            double candySugar, double candyCalories, TypeOfCandy typeOfCandy)
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows)
         {
-            return new Candy(candyName, candyWeight, candyPrice, candySugar, candyCalories, typeOfCandy);
+            throw new NotImplementedException();
+        }
+
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfKozinak typeOfKozinak)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate)
+        {
+            throw new NotImplementedException();
         }
     }
 }

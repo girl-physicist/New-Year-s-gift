@@ -10,16 +10,36 @@ namespace New_Year_s_gift.Factory
 {
     class CreatorOfKozinak : Creator
     {
-        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit, 
-            double caloriPerUnit, TypeOfChocolate typeOfChocolate)
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfHalva typeOfHalva)
         {
             throw new NotImplementedException();
         }
 
-        public override Sweet FactoryMethod(string candyName, double candyWeight, double candyPrice, 
-            double candySugar, double candyCalories, TypeOfCandy typeOfCandy)
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows)
         {
-            return new Candy(candyName, candyWeight, candyPrice, candySugar, candyCalories, typeOfCandy);
+            throw new NotImplementedException();
         }
+
+        public override Sweet FactoryMethod(string kozinakName, double kozinakWeight, double kozinakPrice, double kozinakSugar
+            , double kozinakCalories, TypeOfKozinak kozinakOfHalva)
+        {
+            return new Kozinak(kozinakName, kozinakWeight, kozinakPrice, kozinakSugar, kozinakCalories, kozinakOfHalva);
+    }
+
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfCandy typeOfCandy)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }
