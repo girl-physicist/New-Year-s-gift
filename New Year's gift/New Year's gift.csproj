@@ -50,6 +50,8 @@
     <Compile Include="Classes\Kozinak.cs" />
     <Compile Include="Classes\Marshmallows.cs" />
     <Compile Include="Classes\Sweet.cs" />
+    <Compile Include="Enum\CoveredWithChocolate.cs" />
+    <Compile Include="Enum\DriedFruits.cs" />
     <Compile Include="Enum\TypeOfHalva.cs" />
     <Compile Include="Enum\TypeOfKozinak.cs" />
     <Compile Include="Enum\TypeOfMarshmallows.cs" />
@@ -61,6 +63,8 @@
     <Compile Include="Factory\CreatorOfChocolate.cs" />
     <Compile Include="Interfaces\ICandy.cs" />
     <Compile Include="Interfaces\IChocolate.cs" />
+    <Compile Include="Interfaces\IContainingDriedFruits.cs" />
+    <Compile Include="Interfaces\ICoveredWithChocolate.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
     <Compile Include="Show.cs" />
