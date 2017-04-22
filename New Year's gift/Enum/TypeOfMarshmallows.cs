@@ -4,7 +4,6 @@
     {
         WhitePink,
         Vanilla,
-        CremeBrulee,
-        InChocolate
+        CremeBrulee
     }
 }

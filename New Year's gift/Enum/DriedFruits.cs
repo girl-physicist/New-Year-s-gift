@@ -1,6 +1,6 @@
 ﻿namespace New_Year_s_gift.Enum
 {
-    enum DriedFruits
+ public   enum DriedFruits
     {
         Raisins,
         DriedApricots,

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using New_Year_s_gift.Classes;
 using New_Year_s_gift.Interfaces;
+using New_Year_s_gift.Enum;
 
 namespace New_Year_s_gift.Factory
 {
@@ -20,7 +21,8 @@ namespace New_Year_s_gift.Factory
             , double marshmallowsSugar, double marshmallowsCalories, TypeOfMarshmallows typeOfMarshmallows)
         {
             return new Marshmallows(marshmallowsName, marshmallowsWeight, marshmallowsPrice, marshmallowsSugar
-                , marshmallowsCalories, typeOfMarshmallows);
+             , marshmallowsCalories, typeOfMarshmallows);
+           
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit

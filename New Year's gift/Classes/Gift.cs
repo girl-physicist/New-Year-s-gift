@@ -47,7 +47,6 @@ namespace New_Year_s_gift.Classes
         public string GiftName
         {
             get;
-
         }
     }
 }

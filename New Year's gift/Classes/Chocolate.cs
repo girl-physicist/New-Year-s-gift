@@ -8,26 +8,23 @@ using New_Year_s_gift.Enum;
 
 namespace New_Year_s_gift.Classes
 {
-    class Chocolate : Sweet, IChocolate, IContainingDriedFruits
+    class Chocolate : Sweet, IChocolate
     {
         public TypeOfChocolate TypeOfChocolate
         {
             get;
         }
         public Chocolate(string name, double weight, double price, double sugar, double calories
-            , TypeOfChocolate typeOfChocolate, DriedFruits driedFruits) : base(name, weight, price, sugar, calories)
+            , TypeOfIngredients typeOfIngredients, TypeOfChocolate typeOfChocolate) 
+            : base(name, weight, price, sugar, calories, typeOfIngredients)
         {
             TypeOfChocolate = typeOfChocolate;
-            DriedFruits = driedFruits;
+            //можно ли переопределить значение параметра typeOfIngredients как typeOfChocolate
+            //и, как следствие, не задавать в кострукторе параметр TypeOfChocolate typeOfChocolate?
         }
         public override string GetTypeOfSweetness
         {
             get { return "Chocolate"; }
-        }
-
-        public DriedFruits DriedFruits
-        {
-            get;
         }
     }
 }

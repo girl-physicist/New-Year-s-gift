@@ -14,11 +14,9 @@ namespace New_Year_s_gift
             Console.WriteLine(gift.GiftName);
             foreach (var i in gift.Items)
             {
-                Console.WriteLine("Name of sweetnes: {0}, Weight: {1}, SugarPerUnit: {2}, CaloriPerUnit: {3}, Price: {4}, TypeOfSweetness {5}"
-                    , i.Name, i.Weight, i.SugarPerUnit, i.CaloriPerUnit, i.Price,i.GetTypeOfSweetness);
-
+                Console.WriteLine("Type of sweetnes: {0}, Name of sweetnes: {1}, Weight: {2}, SugarPerUnit: {3}, CaloriPerUnit: {4}, Price: {5}",
+                   i.GetTypeOfSweetness , i.Name, i.Weight, i.SugarPerUnit, i.CaloriPerUnit, i.Price);
             }
-
         }
     }
 }

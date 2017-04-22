@@ -1,4 +1,5 @@
 ﻿using New_Year_s_gift.Classes;
+using New_Year_s_gift.Enum;
 using New_Year_s_gift.Factory;
 using New_Year_s_gift.Interfaces;
 using System;
@@ -50,9 +51,10 @@ namespace New_Year_s_gift
 
                 if (i is CreatorOfMarshmallows)
                 {
-                    gift.Add(i.FactoryMethod("Alpen Gold", 150, 115, 250, 450, TypeOfMarshmallows.InChocolate));
+                    gift.Add(i.FactoryMethod("Alpen Gold", 150, 115, 250, 450, TypeOfMarshmallows.WhitePink));
                     gift.Add(i.FactoryMethod("Красный пищевик", 100, 115, 250, 450, TypeOfMarshmallows.Vanilla));
                 }
+                
             }
 
             gift.Sort();

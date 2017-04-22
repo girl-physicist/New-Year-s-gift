@@ -29,17 +29,25 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public Sweet(string name, double weight, double price, double sugar, double calories)
+        public TypeOfIngredients TypeOfIngredients
+        {
+            get;
+        }
+        public Sweet(string name, double weight, double price, double sugar, double calories, TypeOfIngredients  typeOfIngredients)
         {
             Name = name;
             Weight = weight;
             Price = price;
             SugarPerUnit = sugar;
             CaloriPerUnit = calories;
+            TypeOfIngredients = typeOfIngredients;
+        
         }
         public virtual string GetTypeOfSweetness
         {
             get;
         }
+
+        
     }
 }

@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace New_Year_s_gift.Classes
 {
-    public class Kozinak : Sweet, ICoveredWithChocolate
+    public class Kozinak : Sweet
     {
         public TypeOfKozinak TypeOfKozinak;
-        public Kozinak(string name, double weight, double price, double sugar, double calories, TypeOfKozinak typeOfKozinak)
-            : base(name, weight, price, sugar, calories)
+        public Kozinak(string name, double weight, double price, double sugar, double calories
+            , TypeOfIngredients typeOfIngredients, TypeOfKozinak typeOfKozinak)
+            : base(name, weight, price, sugar, calories, typeOfIngredients)
         {
             TypeOfKozinak = typeOfKozinak;
         }
