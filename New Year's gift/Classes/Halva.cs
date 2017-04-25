@@ -12,9 +12,8 @@ namespace New_Year_s_gift.Classes
     {
         public TypeOfHalva TypeOfHalva;
         
-        public Halva(string name, double weight, double price, double sugar, double calories
-            , TypeOfIngredients typeOfIngredients, TypeOfHalva typeOfHalva)
-            : base(name, weight, price, sugar, calories,  typeOfIngredients)
+        public Halva(string name, double weight, double price, double sugar, double calories, TypeOfHalva typeOfHalva)
+            : base(name, weight, price, sugar, calories)
         {
             TypeOfHalva = typeOfHalva;
         }
@@ -23,6 +22,9 @@ namespace New_Year_s_gift.Classes
             get { return "Halva"; }
         }
 
-       
+        public new Tuple<string, double, double, double, double, TypeOfHalva> ShowItems()
+        {
+            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfHalva);
+        }
     }
 }

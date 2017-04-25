@@ -11,9 +11,8 @@ namespace New_Year_s_gift.Classes
     public class Marshmallows : Sweet
     {
         public TypeOfMarshmallows TypeOfMarshmallows;
-        public Marshmallows(string name, double weight, double price, double sugar, double calories
-            , TypeOfIngredients typeOfIngredients, TypeOfMarshmallows typeOfMarshmallows)
-            : base(name, weight, price, sugar, calories,  typeOfIngredients)
+        public Marshmallows(string name, double weight, double price, double sugar, double calories, TypeOfMarshmallows typeOfMarshmallows)
+            : base(name, weight, price, sugar, calories)
         {
             TypeOfMarshmallows =typeOfMarshmallows;
         }
@@ -27,6 +26,10 @@ namespace New_Year_s_gift.Classes
         public TypeOfChocolate TypeOfChocolate
         {
             get;
+        }
+        public new Tuple<string, double, double, double, double, TypeOfMarshmallows> ShowItems()
+        {
+            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfMarshmallows);
         }
     }
 }

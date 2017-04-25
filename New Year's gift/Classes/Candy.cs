@@ -13,9 +13,8 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public Candy(string name, double weight, double price, double sugar, double calories
-            , TypeOfIngredients typeOfIngredients, TypeOfCandy typeOfCandy)
-            : base(name, weight, price, sugar, calories, typeOfIngredients)
+        public Candy(string name, double weight, double price, double sugar, double calories,TypeOfCandy typeOfCandy)
+            : base(name, weight, price, sugar, calories)
         {
             TypeOfCandy = typeOfCandy;
         }
@@ -23,5 +22,15 @@ namespace New_Year_s_gift.Classes
         {
             get { return "Candy"; }
         }
+
+        public new Tuple<string, double, double, double, double, TypeOfCandy> ShowItems1()
+        {
+            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfCandy);
+        }
+
+        
+
+
+        
     }
 }

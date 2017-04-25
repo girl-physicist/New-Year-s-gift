@@ -29,23 +29,24 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public TypeOfIngredients TypeOfIngredients
-        {
-            get;
-        }
-        public Sweet(string name, double weight, double price, double sugar, double calories, TypeOfIngredients  typeOfIngredients)
+
+        public Sweet(string name, double weight, double price, double sugar, double calories)
         {
             Name = name;
             Weight = weight;
             Price = price;
             SugarPerUnit = sugar;
             CaloriPerUnit = calories;
-            TypeOfIngredients = typeOfIngredients;
-        
+
+
         }
         public virtual string GetTypeOfSweetness
         {
             get;
+        }
+        public Tuple<string, double, double, double, double> ShowItems1()
+        {
+            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit);
         }
 
         

@@ -14,17 +14,18 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public Chocolate(string name, double weight, double price, double sugar, double calories
-            , TypeOfIngredients typeOfIngredients, TypeOfChocolate typeOfChocolate) 
-            : base(name, weight, price, sugar, calories, typeOfIngredients)
+        public Chocolate(string name, double weight, double price, double sugar, double calories, TypeOfChocolate typeOfChocolate) 
+            : base(name, weight, price, sugar, calories)
         {
             TypeOfChocolate = typeOfChocolate;
-            //можно ли переопределить значение параметра typeOfIngredients как typeOfChocolate
-            //и, как следствие, не задавать в кострукторе параметр TypeOfChocolate typeOfChocolate?
         }
         public override string GetTypeOfSweetness
         {
             get { return "Chocolate"; }
+        }
+        public new Tuple<string, double, double, double, double, TypeOfChocolate> ShowItems()
+        {
+            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfChocolate);
         }
     }
 }
