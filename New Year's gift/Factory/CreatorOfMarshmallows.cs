@@ -12,34 +12,29 @@ namespace New_Year_s_gift.Factory
     class CreatorOfMarshmallows : Creator
     {
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfHalva typeOfHalva)
+            , double caloriPerUnit, TypeOfHalva typeOfHalva, bool coveredWithChocolate, bool withNuts)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string marshmallowsName, double marshmallowsWeight, double marshmallowsPrice
-            , double marshmallowsSugar, double marshmallowsCalories, TypeOfMarshmallows typeOfMarshmallows)
+            , double marshmallowsSugar, double marshmallowsCalories, TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
         {
             return new Marshmallows(marshmallowsName, marshmallowsWeight, marshmallowsPrice, marshmallowsSugar
-             , marshmallowsCalories, typeOfMarshmallows);
+             , marshmallowsCalories, typeOfMarshmallows, coveredWithChocolate, driedFruits);
            
         }
 
+        
+
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfKozinak typeOfKozinak, bool coveredWithChocolate
-            , TypeOfChocolate typeOfChocolate, double cocoa)
+            , double caloriPerUnit, TypeOfCandy typeOfCandy, bool withStaffing)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfCandy typeOfCandy)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa)
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa, bool porous)
         {
             throw new NotImplementedException();
         }

@@ -13,10 +13,12 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public Candy(string name, double weight, double price, double sugar, double calories, TypeOfCandy typeOfCandy)
+        public bool WithStuffing;
+        public Candy(string name, double weight, double price, double sugar, double calories, TypeOfCandy typeOfCandy, bool withStuffing)
             : base(name, weight, price, sugar, calories)
         {
             TypeOfCandy = typeOfCandy;
+            WithStuffing = withStuffing;
         }
         public override string GetTypeOfSweetness
         {
@@ -25,8 +27,17 @@ namespace New_Year_s_gift.Classes
 
         public override string GetItemsInfo()
         {
-            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
-                CaloriPerUnit + " TypeOfCandy " + TypeOfCandy);
+            if (WithStuffing == true)
+            {
+                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
+                    ", Type Of Candy {5}, With Stuffing ",
+                 Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfCandy);
+            }
+            else
+            {
+                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}, Type Of Candy {5} ",
+                 Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfCandy);
+            }
         }
     }
 }

@@ -12,34 +12,29 @@ namespace New_Year_s_gift.Factory
     class CreatorOfCandy : Creator
     {
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfHalva typeOfHalva)
+            , double caloriPerUnit, TypeOfHalva typeOfHalva, bool coveredWithChocolate, bool withNuts)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows)
+            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
         {
             throw new NotImplementedException();
         }
 
-        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfKozinak typeOfKozinak, bool coveredWithChocolate
-            , TypeOfChocolate typeOfChocolate, double cocoa)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa)
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa, bool porous)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string candyName, double candyWeight, double candyPrice
-            , double candySugar, double candyCalories, TypeOfCandy typeOfCandy)
+            , double candySugar, double candyCalories, TypeOfCandy typeOfCandy,bool withStaffing)
         {
-            return new Candy(candyName, candyWeight, candyPrice, candySugar, candyCalories, typeOfCandy);
+            return new Candy(candyName, candyWeight, candyPrice, candySugar, candyCalories, typeOfCandy,withStaffing);
         }
         
     }

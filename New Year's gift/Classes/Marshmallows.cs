@@ -8,28 +8,39 @@ using New_Year_s_gift.Enum;
 
 namespace New_Year_s_gift.Classes
 {
-    public class Marshmallows : Sweet
+    public class Marshmallows : Sweet, ICoveredWithChocolate, IDriedFruits
     {
         public TypeOfMarshmallows TypeOfMarshmallows;
-       
+        public bool CoveredWithChocolate
+        { get; }
+        public DriedFruits DriedFruits
+        { get; }
         public Marshmallows(string name, double weight, double price, double sugar, double calories
-            , TypeOfMarshmallows typeOfMarshmallows)
+            , TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
             : base(name, weight, price, sugar, calories)
         {
-            TypeOfMarshmallows =typeOfMarshmallows;
-                 }
-
-
+            TypeOfMarshmallows = typeOfMarshmallows;
+            CoveredWithChocolate = coveredWithChocolate;
+            DriedFruits = driedFruits;
+        }
         public override string GetTypeOfSweetness
         {
             get { return "Marshmallows"; }
         }
-
-       
         public override string GetItemsInfo()
         {
-            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
-                CaloriPerUnit + " TypeOfCandy " + TypeOfMarshmallows+ " percentageOfCocoaProducts ");
+            if (CoveredWithChocolate == true)
+            {
+                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
+                ", Type Of Marshmallows {5}, Contains {6}, Covered With Chocolate "
+                    , Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfMarshmallows, DriedFruits);
+            }
+            else
+            {
+                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
+                ", Type Of Marshmallows {5}, Contains {6}"
+                    , Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfMarshmallows, DriedFruits);
+            }
         }
     }
 }

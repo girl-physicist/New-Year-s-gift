@@ -12,33 +12,29 @@ namespace New_Year_s_gift.Factory
     class CreatorOfChocolate : Creator
     {
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfHalva typeOfHalva)
+            , double caloriPerUnit, TypeOfHalva typeOfHalva, bool coveredWithChocolate, bool withNuts)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows)
+            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
         {
             throw new NotImplementedException();
         }
 
-        public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfKozinak typeOfKozinak, bool coveredWithChocolate
-            , TypeOfChocolate typeOfChocolate, double cocoa)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public override Sweet FactoryMethod(string chocoName, double chocoWeight, double chocoPrice
-            , double chocoSugar, double chocoCalories, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa)
+            , double chocoSugar, double chocoCalories, TypeOfChocolate typeOfChocolate
+            , DriedFruits driedFruits, double cocoa,bool porous)
         {
             return new Chocolate(chocoName, chocoWeight, chocoPrice, chocoSugar, chocoCalories
-                , typeOfChocolate,driedFruits,cocoa);
+                , typeOfChocolate,driedFruits,cocoa,porous);
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfCandy typeOfCandy)
+            , double caloriPerUnit, TypeOfCandy typeOfCandy, bool withStaffing)
         {
             throw new NotImplementedException();
         }

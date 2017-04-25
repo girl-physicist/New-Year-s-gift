@@ -22,13 +22,15 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
+        public bool Porous;
         public Chocolate(string name, double weight, double price, double sugar, double calories
-            , TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa) 
+            , TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa, bool porous)
             : base(name, weight, price, sugar, calories)
         {
             TypeOfChocolate = typeOfChocolate;
             DriedFruits = driedFruits;
             PercentageOfCocoaProducts = cocoa;
+            Porous = porous;
         }
         public override string GetTypeOfSweetness
         {
@@ -36,9 +38,18 @@ namespace New_Year_s_gift.Classes
         }
         public override string GetItemsInfo()
         {
-            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
-                CaloriPerUnit + " Type Of Chocolate " + TypeOfChocolate
-                + " "+ PercentageOfCocoaProducts+"% "+ "Contains "+ DriedFruits);
+            if (Porous == true)
+            {
+                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
+                    ", Type Of Chocolate {5} porous {6}%, Contains {7}",
+                 Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfChocolate, PercentageOfCocoaProducts, DriedFruits);
+            }
+            else
+            {
+                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
+                    ", Type Of Chocolate {5} {6}%, Contains {7}",
+                 Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfChocolate, PercentageOfCocoaProducts, DriedFruits);
+            }
         }
     }
 }

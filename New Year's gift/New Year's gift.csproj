@@ -47,15 +47,13 @@
     <Compile Include="Classes\Chocolate.cs" />
     <Compile Include="Classes\Gift.cs" />
     <Compile Include="Classes\Halva.cs" />
-    <Compile Include="Classes\Kozinak.cs" />
+    <Compile Include="Interfaces\ICoweredWithChocolate.cs" />
     <Compile Include="Classes\Marshmallows.cs" />
     <Compile Include="Classes\Sweet.cs" />
     <Compile Include="Enum\DriedFruits.cs" />
     <Compile Include="Enum\TypeOfHalva.cs" />
-    <Compile Include="Enum\TypeOfKozinak.cs" />
     <Compile Include="Enum\TypeOfMarshmallows.cs" />
     <Compile Include="Factory\Creator.cs" />
-    <Compile Include="Factory\CreatorOfKozinak.cs" />
     <Compile Include="Factory\CreatorOfMarshmallows.cs" />
     <Compile Include="Factory\CreatorOfHalva.cs" />
     <Compile Include="Factory\CreatorOfCandy.cs" />
@@ -65,6 +63,7 @@
     <Compile Include="Interfaces\IDriedFruits.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
+    <Compile Include="Interfaces\IWithDriedFruits.cs" />
     <Compile Include="Show.cs" />
     <Compile Include="Enum\TypeOfCandy.cs" />
     <Compile Include="Enum\TypeOfChocolate.cs" />
