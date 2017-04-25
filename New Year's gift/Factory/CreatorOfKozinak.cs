@@ -24,10 +24,21 @@ namespace New_Year_s_gift.Factory
         }
 
         public override Sweet FactoryMethod(string kozinakName, double kozinakWeight, double kozinakPrice, double kozinakSugar
-            , double kozinakCalories, TypeOfKozinak kozinakOfHalva)
+            , double kozinakCalories, TypeOfKozinak typeOfKozinak, bool coveredWithChocolate
+           , TypeOfChocolate typeOfChocolate, double cocoa)
         {
-            return new Kozinak(kozinakName, kozinakWeight, kozinakPrice, kozinakSugar, kozinakCalories, kozinakOfHalva);
-    }
+            if (coveredWithChocolate == true)
+            {
+                return new Kozinak(kozinakName, kozinakWeight, kozinakPrice, kozinakSugar, kozinakCalories
+               , typeOfKozinak, coveredWithChocolate, typeOfChocolate, cocoa);
+            }
+            else
+            {
+                return new Kozinak(kozinakName, kozinakWeight, kozinakPrice, kozinakSugar, kozinakCalories
+               , typeOfKozinak, coveredWithChocolate, TypeOfChocolate.None, 0);
+            }
+
+        }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
             , double caloriPerUnit, TypeOfCandy typeOfCandy)
@@ -36,7 +47,7 @@ namespace New_Year_s_gift.Factory
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate)
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa)
         {
             throw new NotImplementedException();
         }

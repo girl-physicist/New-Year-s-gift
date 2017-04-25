@@ -25,11 +25,12 @@ namespace New_Year_s_gift.Factory
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
            , double caloriPerUnit, TypeOfCandy typeOfCandy);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate);
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
             , double caloriPerUnit, TypeOfHalva typeOfHalva);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfKozinak typeOfKozinak);
+            , double caloriPerUnit, TypeOfKozinak typeOfKozinak, bool coveredWithChocolate
+            , TypeOfChocolate typeOfChocolate, double cocoa);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
             , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows);
     }

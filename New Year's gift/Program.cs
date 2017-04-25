@@ -33,8 +33,8 @@ namespace New_Year_s_gift
 
                 if (i is CreatorOfChocolate)
                 {
-                    gift.Add(i.FactoryMethod("Alpen Gold", 100, 115, 250, 450, TypeOfChocolate.Milk));
-                    gift.Add(i.FactoryMethod("Алёнка", 150, 115, 250, 450, TypeOfChocolate.Milk));
+                    gift.Add(i.FactoryMethod("Alpen Gold", 100, 115, 250, 450, TypeOfChocolate.Milk,DriedFruits.Peanut,70));
+                    gift.Add(i.FactoryMethod("Алёнка", 150, 115, 250, 450, TypeOfChocolate.Milk,DriedFruits.Nut,50));
                 }
 
                 if (i is CreatorOfHalva)
@@ -45,8 +45,10 @@ namespace New_Year_s_gift
 
                 if (i is CreatorOfKozinak)
                 {
-                    gift.Add(i.FactoryMethod("Alpen Gold", 250, 115, 250, 450, TypeOfKozinak.FromSesame));
-                    gift.Add(i.FactoryMethod("Алёнка", 100, 115, 250, 450, TypeOfKozinak.FromSunflowerSeeds));
+                    gift.Add(i.FactoryMethod("Козинак", 250, 115, 250, 450, TypeOfKozinak.FromSesame
+                        ,false,TypeOfChocolate.None,0));
+                    gift.Add(i.FactoryMethod("Козинак в шоколаде", 100, 115, 250, 450, TypeOfKozinak.FromSunflowerSeeds
+                        ,true,TypeOfChocolate.Milk,45));
                 }
 
                 if (i is CreatorOfMarshmallows)

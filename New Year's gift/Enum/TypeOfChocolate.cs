@@ -6,6 +6,7 @@
         Milk,
         White,
         Vegan,
-        Diabetic
+        Diabetic,
+        None
     }
 }

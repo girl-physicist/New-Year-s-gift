@@ -11,11 +11,13 @@ namespace New_Year_s_gift.Classes
     public class Marshmallows : Sweet
     {
         public TypeOfMarshmallows TypeOfMarshmallows;
-        public Marshmallows(string name, double weight, double price, double sugar, double calories, TypeOfMarshmallows typeOfMarshmallows)
+       
+        public Marshmallows(string name, double weight, double price, double sugar, double calories
+            , TypeOfMarshmallows typeOfMarshmallows)
             : base(name, weight, price, sugar, calories)
         {
             TypeOfMarshmallows =typeOfMarshmallows;
-        }
+                 }
 
 
         public override string GetTypeOfSweetness
@@ -24,10 +26,10 @@ namespace New_Year_s_gift.Classes
         }
 
        
-        public override string ShowItems1()
+        public override string GetItemsInfo()
         {
             return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
-                CaloriPerUnit + " TypeOfCandy " + TypeOfMarshmallows);
+                CaloriPerUnit + " TypeOfCandy " + TypeOfMarshmallows+ " percentageOfCocoaProducts ");
         }
     }
 }

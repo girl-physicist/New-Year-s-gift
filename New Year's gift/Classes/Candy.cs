@@ -23,7 +23,7 @@ namespace New_Year_s_gift.Classes
             get { return "Candy"; }
         }
 
-        public override string ShowItems1()
+        public override string GetItemsInfo()
         {
             return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
                 CaloriPerUnit + " TypeOfCandy " + TypeOfCandy);

@@ -62,6 +62,7 @@
     <Compile Include="Factory\CreatorOfChocolate.cs" />
     <Compile Include="Interfaces\ICandy.cs" />
     <Compile Include="Interfaces\IChocolate.cs" />
+    <Compile Include="Interfaces\IDriedFruits.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
     <Compile Include="Show.cs" />

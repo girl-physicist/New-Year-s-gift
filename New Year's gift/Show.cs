@@ -16,7 +16,7 @@ namespace New_Year_s_gift
             foreach (var i in gift.Items)
             {
                 Console.WriteLine("Type of sweetnes: {0}, {1}",
-                   i.GetTypeOfSweetness, i.ShowItems1());
+                   i.GetTypeOfSweetness, i.GetItemsInfo());
                
             }
         }

@@ -30,13 +30,14 @@ namespace New_Year_s_gift.Factory
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfKozinak typeOfKozinak)
+            , double caloriPerUnit, TypeOfKozinak typeOfKozinak, bool coveredWithChocolate
+            , TypeOfChocolate typeOfChocolate, double cocoa)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate)
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa)
         {
             throw new NotImplementedException();
         }

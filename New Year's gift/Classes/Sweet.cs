@@ -44,14 +44,12 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public virtual string ShowItems1()
+        public virtual string GetItemsInfo()
         {
-           
-            //return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit);
-            return ("Name" + Name);
-
+            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit +
+                " calories " + CaloriPerUnit);
         }
 
-        
+
     }
 }
