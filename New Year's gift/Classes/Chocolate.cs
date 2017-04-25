@@ -23,9 +23,10 @@ namespace New_Year_s_gift.Classes
         {
             get { return "Chocolate"; }
         }
-        public new Tuple<string, double, double, double, double, TypeOfChocolate> ShowItems()
+        public override string ShowItems1()
         {
-            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfChocolate);
+            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
+                CaloriPerUnit + " TypeOfCandy " + TypeOfChocolate);
         }
     }
 }

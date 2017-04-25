@@ -22,9 +22,10 @@ namespace New_Year_s_gift.Classes
             get { return "Halva"; }
         }
 
-        public new Tuple<string, double, double, double, double, TypeOfHalva> ShowItems()
+        public override string ShowItems1()
         {
-            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfHalva);
+            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
+                CaloriPerUnit + " TypeOfCandy " + TypeOfHalva);
         }
     }
 }

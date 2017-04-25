@@ -19,9 +19,10 @@ namespace New_Year_s_gift.Classes
         {
             get { return "Kozinak"; }
         }
-        public new Tuple<string, double, double, double, double, TypeOfKozinak> ShowItems()
+        public override string ShowItems1()
         {
-            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfKozinak);
+            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
+                CaloriPerUnit + " TypeOfCandy " + TypeOfKozinak);
         }
     }
 }

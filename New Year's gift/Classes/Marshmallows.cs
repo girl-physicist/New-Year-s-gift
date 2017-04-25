@@ -23,13 +23,11 @@ namespace New_Year_s_gift.Classes
             get { return "Marshmallows"; }
         }
 
-        public TypeOfChocolate TypeOfChocolate
+       
+        public override string ShowItems1()
         {
-            get;
-        }
-        public new Tuple<string, double, double, double, double, TypeOfMarshmallows> ShowItems()
-        {
-            return Tuple.Create(Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfMarshmallows);
+            return ("Name " + Name + " weight " + Weight + " price " + Price + " sugar " + SugarPerUnit + " calories " +
+                CaloriPerUnit + " TypeOfCandy " + TypeOfMarshmallows);
         }
     }
 }
