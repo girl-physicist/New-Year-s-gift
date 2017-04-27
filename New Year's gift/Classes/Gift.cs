@@ -20,9 +20,9 @@ namespace New_Year_s_gift.Classes
         {
             get;
         }
-        public Gift(string name)
+        public Gift(string name,ICollection<ISweetness> items)
         {
-            items = new List<ISweetness>();
+           this.items =items ;
             GiftName = name;
         }
         public void Add(Sweet sweets)
@@ -38,14 +38,7 @@ namespace New_Year_s_gift.Classes
         {
             var temp = items.OrderBy(x => x.Weight).ToArray();
             return temp;
-            
-            //items.Clear();
-            //foreach (var item in temp)x
-            //{
-            //    items.Add(item);
-            //}
         }
-
         public IEnumerable<ISweetness> FindSweetnessBySugar(int min, int max)
         {
             return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();

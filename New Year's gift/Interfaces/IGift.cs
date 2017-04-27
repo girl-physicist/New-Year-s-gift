@@ -15,7 +15,6 @@ namespace New_Year_s_gift.Interfaces
         void Add(Sweet sweets);
         double GiftWeight();
         IEnumerable<ISweetness> SortSweetnessByWeight();
-        //void SortSweetnessByWeight();
         IEnumerable<ISweetness> FindSweetnessBySugar(int min, int max);
     }
 }

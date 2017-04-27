@@ -20,7 +20,7 @@ namespace New_Year_s_gift
             creators[2] = new CreatorOfHalva();
             creators[3] = new CreatorOfMarshmallows();
 
-            IGift gift = new Gift("Gift 1");
+            IGift gift = new Gift("Gift 1",new List<ISweetness>());
             foreach (Creator i in creators)
             {
                 if (i is CreatorOfCandy)

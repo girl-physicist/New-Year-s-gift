@@ -1,4 +1,5 @@
-﻿using New_Year_s_gift.Interfaces;
+﻿using New_Year_s_gift.Classes;
+using New_Year_s_gift.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,14 @@ namespace New_Year_s_gift
             }
 
             Console.WriteLine("Sort Sweetness By Weight");
-            //foreach (var i in gift.)?????????????????
-            //{
-            //    Console.WriteLine("{0}, {1}, {2}",
-            //       i.GetTypeOfSweetness, i.TypeOfIngredients, i.GetItemInfo);
-            //    Console.WriteLine();
-            //}
+            var temp = gift.SortSweetnessByWeight();
+
+            foreach (var i in temp)
+            {
+                Console.WriteLine("{0}, {1}, {2}",
+                   i.GetTypeOfSweetness, i.TypeOfIngredients, i.GetItemInfo);
+                Console.WriteLine();
+            }
         }
     }
 }
