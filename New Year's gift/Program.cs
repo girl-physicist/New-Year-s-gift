@@ -55,19 +55,7 @@ namespace New_Year_s_gift
 
             gift.SortSweetnessByWeight();
             gift.ShowItems();
-            Console.WriteLine("FindSweetnessBySugar ");
-            Console.WriteLine("Enter min value Sugar" );
-            var min = Convert.ToInt32( Console.ReadLine());
-            Console.WriteLine("Enter max value Sugar");
-            var max = Convert.ToInt32( Console.ReadLine());
-            foreach (var items in gift.FindSweetnessBySugar(min, max))
-            {
-                Console.WriteLine("Name: {0}, SugarPerUnit: {1}", items.Name, items.SugarPerUnit);
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("GiftWeight: {0}", gift.GiftWeight());
-            Console.ReadKey();
+            
 
         }
     }
