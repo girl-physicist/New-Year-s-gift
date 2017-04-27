@@ -56,11 +56,6 @@
     <Compile Include="Enum\DriedFruits.cs" />
     <Compile Include="Enum\TypeOfHalva.cs" />
     <Compile Include="Enum\TypeOfMarshmallows.cs" />
-    <Compile Include="Factory\Creator.cs" />
-    <Compile Include="Factory\CreatorOfMarshmallows.cs" />
-    <Compile Include="Factory\CreatorOfHalva.cs" />
-    <Compile Include="Factory\CreatorOfCandy.cs" />
-    <Compile Include="Factory\CreatorOfChocolate.cs" />
     <Compile Include="Interfaces\IDriedFruits.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />

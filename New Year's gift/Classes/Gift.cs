@@ -13,9 +13,8 @@ namespace New_Year_s_gift.Classes
         private ICollection<ISweetness> items;
         public IEnumerable<ISweetness> Items
         {
-            get { return this.items; }
+            get{ return this.items; }
         }
-
         public string GiftName
         {
             get;
@@ -25,9 +24,17 @@ namespace New_Year_s_gift.Classes
            this.items =items ;
             GiftName = name;
         }
-        public void Add(Sweet sweets)
+        public void AddSweet(Sweet sweet)
         {
-            items.Add(sweets);
+            items.Add(sweet);
+        }
+        public void RemoveSweet(Sweet sweet)
+        {
+            items.Remove(sweet);
+        }
+        public int GetCountOfSweet()
+        {
+           return items.Count();
         }
         public double GiftWeight()
         {
@@ -43,7 +50,5 @@ namespace New_Year_s_gift.Classes
         {
             return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
         }
-        
-
     }
 }

@@ -12,7 +12,9 @@ namespace New_Year_s_gift.Interfaces
     {
         IEnumerable<ISweetness> Items { get; }
         string GiftName { get; }
-        void Add(Sweet sweets);
+        void AddSweet(Sweet sweet);
+        void RemoveSweet(Sweet sweet);
+        int GetCountOfSweet();
         double GiftWeight();
         IEnumerable<ISweetness> SortSweetnessByWeight();
         IEnumerable<ISweetness> FindSweetnessBySugar(int min, int max);
