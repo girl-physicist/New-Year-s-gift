@@ -10,45 +10,44 @@ namespace New_Year_s_gift.Classes
 {
     class Gift : IGift
     {
-        private ICollection<ISweetness> items;
+        private ICollection<ISweetness> sweetnessitems;
         public IEnumerable<ISweetness> Items
         {
-            get{ return this.items; }
+            get { return sweetnessitems; }
         }
         public string GiftName
         {
             get;
         }
-        public Gift(string name,ICollection<ISweetness> items)
+        public Gift(string name, ICollection<ISweetness> items)
         {
-           this.items =items ;
+            sweetnessitems = items;
             GiftName = name;
         }
         public void AddSweet(Sweet sweet)
         {
-            items.Add(sweet);
+            sweetnessitems.Add(sweet);
         }
         public void RemoveSweet(Sweet sweet)
         {
-            items.Remove(sweet);
+            sweetnessitems.Remove(sweet);
         }
         public int GetCountOfSweet()
         {
-           return items.Count();
+            return sweetnessitems.Count();
         }
         public double GiftWeight()
         {
-            return items.Sum(x => x.Weight);
+            return sweetnessitems.Sum(x => x.Weight);
         }
-
         public IEnumerable<ISweetness> SortSweetnessByWeight()
         {
-            var temp = items.OrderBy(x => x.Weight).ToArray();
+            var temp = sweetnessitems.OrderBy(x => x.Weight).ToArray();
             return temp;
         }
         public IEnumerable<ISweetness> FindSweetnessBySugar(int min, int max)
         {
-            return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
+            return sweetnessitems.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
         }
     }
 }

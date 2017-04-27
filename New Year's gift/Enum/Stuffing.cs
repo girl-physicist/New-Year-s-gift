@@ -14,6 +14,7 @@ namespace New_Year_s_gift.Enum
         With_Vanillin_Stuffing,
         With_Jam_Stuffing,
         With_Halva_Stuffing,
+        With_Waffle_Сrumb_Stuffing,
         Without_Stuffing
     }
 }
