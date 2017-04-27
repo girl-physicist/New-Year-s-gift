@@ -47,7 +47,10 @@
     <Compile Include="Classes\Chocolate.cs" />
     <Compile Include="Classes\Gift.cs" />
     <Compile Include="Classes\Halva.cs" />
-    <Compile Include="Interfaces\ICoweredWithChocolate.cs" />
+    <Compile Include="Enum\Stuffing.cs" />
+    <Compile Include="Enum\Thickener.cs" />
+    <Compile Include="Enum\VariantsOfChocolateProducts.cs" />
+    <Compile Include="Enum\WithNuts.cs" />
     <Compile Include="Classes\Marshmallows.cs" />
     <Compile Include="Classes\Sweet.cs" />
     <Compile Include="Enum\DriedFruits.cs" />
@@ -58,12 +61,9 @@
     <Compile Include="Factory\CreatorOfHalva.cs" />
     <Compile Include="Factory\CreatorOfCandy.cs" />
     <Compile Include="Factory\CreatorOfChocolate.cs" />
-    <Compile Include="Interfaces\ICandy.cs" />
-    <Compile Include="Interfaces\IChocolate.cs" />
     <Compile Include="Interfaces\IDriedFruits.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
-    <Compile Include="Interfaces\IWithDriedFruits.cs" />
     <Compile Include="Show.cs" />
     <Compile Include="Enum\TypeOfCandy.cs" />
     <Compile Include="Enum\TypeOfChocolate.cs" />
@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Classes\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />

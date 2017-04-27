@@ -2,12 +2,13 @@
 {
  public   enum DriedFruits
     {
-        Raisins,
-        DriedApricots,
-        Prune,
-        Nut,
-        Peanut,
-        CandiedFruit,
+        ContainsRaisins,
+        ContainsDriedApricots,
+        ContainsPrune,
+        ContainsNut,
+        ContainsPeanut,
+        ContainsCandiedFruit,
+        CoconutChips,
         WithoutDriedFruits
     }
 }

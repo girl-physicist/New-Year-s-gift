@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="New_Year_s_gift.Classes.Candy">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAAAABAQ=</HashCode>
+      <FileName>Classes\Candy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="New_Year_s_gift.Classes.Chocolate">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAEAAAAAAgAAAAJAAAAACAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Classes\Chocolate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="New_Year_s_gift.Classes.Gift">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAIAAAACAAAAAgQAAAAAAAAAAAAAAIAQAAAAAA=</HashCode>
+      <FileName>Classes\Gift.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="New_Year_s_gift.Classes.Halva">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAMAAAAAAAAAAABgAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Classes\Halva.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="New_Year_s_gift.Classes.Marshmallows">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAEAAAAAAAAAAABAAAAACAAAAAgAAAAAAQ=</HashCode>
+      <FileName>Classes\Marshmallows.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="New_Year_s_gift.Classes.Sweet">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAEAAAAAAIAAAQBACAAAAACAAAAAAAAAAQ=</HashCode>
+      <FileName>Classes\Sweet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

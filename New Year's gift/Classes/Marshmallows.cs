@@ -8,39 +8,27 @@ using New_Year_s_gift.Enum;
 
 namespace New_Year_s_gift.Classes
 {
-    public class Marshmallows : Sweet, ICoveredWithChocolate, IDriedFruits
+    public class Marshmallows : Sweet, IDriedFruits
     {
         public TypeOfMarshmallows TypeOfMarshmallows;
-        public bool CoveredWithChocolate
-        { get; }
         public DriedFruits DriedFruits
-        { get; }
+        {
+            get;
+        }
+        public Thickener Thickener;
         public Marshmallows(string name, double weight, double price, double sugar, double calories
-            , TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
+            , TypeOfMarshmallows typeOfMarshmallows, DriedFruits driedFruits, Thickener thickener)
             : base(name, weight, price, sugar, calories)
         {
             TypeOfMarshmallows = typeOfMarshmallows;
-            CoveredWithChocolate = coveredWithChocolate;
             DriedFruits = driedFruits;
+            Thickener = thickener;
         }
-        public override string GetTypeOfSweetness
-        {
-            get { return "Marshmallows"; }
-        }
-        public override string GetItemsInfo()
-        {
-            if (CoveredWithChocolate == true)
-            {
-                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
-                ", Type Of Marshmallows {5}, Contains {6}, Covered With Chocolate "
-                    , Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfMarshmallows, DriedFruits);
-            }
-            else
-            {
-                return string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
-                ", Type Of Marshmallows {5}, Contains {6}"
-                    , Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfMarshmallows, DriedFruits);
-            }
-        }
+        public override string GetTypeOfSweetness => "Marshmallows";
+        public override string TypeOfIngredients => string.Format("Type Of Marshmallows: {0}", TypeOfMarshmallows);
+        public override string GetItemInfo => string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
+                    ", Type of Thickener {5}, {6}", Name, Weight, Price, SugarPerUnit, CaloriPerUnit, Thickener, DriedFruits);
+
+
     }
 }

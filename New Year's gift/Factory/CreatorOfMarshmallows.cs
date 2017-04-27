@@ -12,29 +12,29 @@ namespace New_Year_s_gift.Factory
     class CreatorOfMarshmallows : Creator
     {
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfHalva typeOfHalva, bool coveredWithChocolate, bool withNuts)
+            , double caloriPerUnit, TypeOfHalva typeOfHalva,  WithNuts withNuts)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string marshmallowsName, double marshmallowsWeight, double marshmallowsPrice
-            , double marshmallowsSugar, double marshmallowsCalories, TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
+            , double marshmallowsSugar, double marshmallowsCalories, TypeOfMarshmallows typeOfMarshmallows,  DriedFruits driedFruits,Thickener thickener)
         {
             return new Marshmallows(marshmallowsName, marshmallowsWeight, marshmallowsPrice, marshmallowsSugar
-             , marshmallowsCalories, typeOfMarshmallows, coveredWithChocolate, driedFruits);
+             , marshmallowsCalories, typeOfMarshmallows,  driedFruits, thickener);
            
         }
 
         
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfCandy typeOfCandy, bool withStaffing)
+            , double caloriPerUnit, TypeOfCandy typeOfCandy, Stuffing stuffing)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa, bool porous)
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa, VariantsOfChocolateProducts variantsOfChocolateProducts)
         {
             throw new NotImplementedException();
         }

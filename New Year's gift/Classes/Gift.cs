@@ -11,6 +11,15 @@ namespace New_Year_s_gift.Classes
     class Gift : IGift
     {
         private ICollection<Sweet> items;
+        public IEnumerable<Sweet> Items
+        {
+            get { return this.items; }
+        }
+
+        public string GiftName
+        {
+            get;
+        }
         public Gift(string name)
         {
             items = new List<Sweet>();
@@ -27,27 +36,14 @@ namespace New_Year_s_gift.Classes
 
         public void Sort()
         {
-            var temp = items.OrderBy(x => x.Weight).ToList();
-            items.Clear();
-            foreach (var item in temp)
-            {
-                items.Add(item);
-            }
+            items = items.OrderBy(x => x.Weight).ToList();
         }
 
         public IEnumerable<Sweet> FindCandyBySugar(int min, int max)
         {
             return items.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
         }
-        public ICollection<Sweet> Items
-        {
-            get { return this.items; }
-        }
-
-        public string GiftName
-        {
-            get;
-        }
+        
 
     }
 }

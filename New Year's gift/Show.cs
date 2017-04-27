@@ -12,11 +12,11 @@ namespace New_Year_s_gift
         public static void ShowItems(this IGift gift)
         {
             Console.WriteLine(gift.GiftName);
-
+           
             foreach (var i in gift.Items)
             {
                 Console.WriteLine("{0}, {1}",
-                   i.GetTypeOfSweetness, i.GetItemsInfo());
+                   i.GetTypeOfSweetness, i.GetItemInfo);
                 Console.WriteLine();
                
             }

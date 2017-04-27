@@ -11,24 +11,15 @@ namespace New_Year_s_gift.Factory
 {
     public abstract class Creator
     {
-        //public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-        //    , double caloriPerUnit, TypeOfCandy typeOfCandy);
-        //public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-        //    , double caloriPerUnit, TypeOfChocolate typeOfChocolate);
-        //public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-        //    , double caloriPerUnit, TypeOfHalva typeOfHalva);
-        //public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-        //    , double caloriPerUnit, TypeOfKozinak typeOfKozinak);
-        //public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-        //    , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows);
-
+       
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-           , double caloriPerUnit, TypeOfCandy typeOfCandy, bool withStaffing);
+           , double caloriPerUnit, TypeOfCandy typeOfCandy,Stuffing stuffing);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa,bool porous);
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa
+            , VariantsOfChocolateProducts variantsOfChocolateProducts);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfHalva typeOfHalva, bool coveredWithChocolate, bool withNuts);
+            , double caloriPerUnit, TypeOfHalva typeOfHalva, WithNuts withNuts);
         public abstract Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits);
+            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows,  DriedFruits driedFruits, Thickener thickener);
     }
 }

@@ -13,10 +13,10 @@ namespace New_Year_s_gift.Interfaces
         string Name { get; }
         double CaloriPerUnit { get; }
         double Price { get; }
-        
+        string GetTypeOfSweetness { get; }
+        string GetItemInfo { get; }
+        string TypeOfIngredients { get; }
     }
 
-   public enum TypeOfIngredients
-    {
-    }
+   
 }

@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace New_Year_s_gift.Interfaces
+namespace New_Year_s_gift.Enum
 {
-   public interface ICandy
+    public enum Thickener
     {
-        TypeOfCandy TypeOfCandy { get; }
+        Pectin,
+        Gelatin,
+        AgarAgar
     }
 }

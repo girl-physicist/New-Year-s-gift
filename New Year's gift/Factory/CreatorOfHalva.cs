@@ -12,19 +12,19 @@ namespace New_Year_s_gift.Factory
     class CreatorOfHalva : Creator
     {
         public override Sweet FactoryMethod(string halvaName, double halvaWeight, double halvaPrice, double halvaSugar
-            , double halvaCalories, TypeOfHalva typeOfHalva, bool coveredWithChocolate, bool withNuts)
+            , double halvaCalories, TypeOfHalva typeOfHalva, WithNuts withNuts)
         {
-            return new Halva(halvaName, halvaWeight, halvaPrice, halvaSugar, halvaCalories, typeOfHalva,coveredWithChocolate,withNuts);
+            return new Halva(halvaName, halvaWeight, halvaPrice, halvaSugar, halvaCalories, typeOfHalva,withNuts);
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfCandy typeOfCandy, bool withStaffing)
+            , double caloriPerUnit, TypeOfCandy typeOfCandy, Stuffing stuffing)
         {
             throw new NotImplementedException();
         }
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows, bool coveredWithChocolate, DriedFruits driedFruits)
+            , double caloriPerUnit, TypeOfMarshmallows typeOfMarshmallows, DriedFruits driedFruits, Thickener thickener)
         {
             throw new NotImplementedException();
         }
@@ -32,7 +32,7 @@ namespace New_Year_s_gift.Factory
        
 
         public override Sweet FactoryMethod(string name, double weight, double price, double sugarPerUnit
-            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa, bool porous)
+            , double caloriPerUnit, TypeOfChocolate typeOfChocolate, DriedFruits driedFruits, double cocoa,  VariantsOfChocolateProducts variantsOfChocolateProducts)
         {
             throw new NotImplementedException();
         }

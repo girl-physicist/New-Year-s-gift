@@ -10,13 +10,11 @@ namespace New_Year_s_gift.Interfaces
 
     public interface IGift
     {
-        ICollection<Sweet> Items { get; }
+        IEnumerable<Sweet> Items { get; }
         string GiftName { get; }
         void Add(Sweet sweets);
         double GiftWeight();
-        //void ShowItems(); 
         void Sort();
-        //void FindCandyBySugar(int min, int max);
         IEnumerable<Sweet> FindCandyBySugar(int min, int max);
     }
 }
