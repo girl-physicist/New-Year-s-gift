@@ -2,8 +2,8 @@
 {
     public enum TypeOfMarshmallows
     {
-        WhitePink,
+        White_Pink,
         Vanilla,
-        CremeBrulee
+        Creme_Brulee
     }
 }

@@ -15,11 +15,20 @@ namespace New_Year_s_gift
            
             foreach (var i in gift.Items)
             {
-                Console.WriteLine("{0}, {1}",
-                   i.GetTypeOfSweetness, i.GetItemInfo);
-                Console.WriteLine();
+               
+                Console.WriteLine("{0}, {1}, {2}",
+                   i.GetTypeOfSweetness,i.TypeOfIngredients, i.GetItemInfo);
+                Console.WriteLine("/-------------------------------------------/");
                
             }
+
+            Console.WriteLine("Sort Sweetness By Weight");
+            //foreach (var i in gift.)?????????????????
+            //{
+            //    Console.WriteLine("{0}, {1}, {2}",
+            //       i.GetTypeOfSweetness, i.TypeOfIngredients, i.GetItemInfo);
+            //    Console.WriteLine();
+            //}
         }
     }
 }

@@ -2,9 +2,9 @@
 {
     public enum WithNuts
     {
-        WithWholeNut,
-        WithCrushedNut,
-        WithPeanuts,
-        WithoutNuts
+        With_Whole_Nut,
+        With_Crushed_Nut,
+        With_Peanuts,
+        Without_Nuts
     }
 }

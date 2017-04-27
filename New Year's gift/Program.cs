@@ -25,39 +25,42 @@ namespace New_Year_s_gift
             {
                 if (i is CreatorOfCandy)
                 {
-                    gift.Add(i.FactoryMethod("M&M", 80, 105, 125, 500, TypeOfCandy.Chocolate,Stuffing.WithCognacStuffing));
-                    gift.Add(i.FactoryMethod("ChupaChups", 25, 75, 70, 420, TypeOfCandy.Lollipop,Stuffing.WithoutStuffing));
+                    gift.Add(i.FactoryMethod("M&M", 80, 105, 125, 500, TypeOfCandy.Chocolate,Stuffing.With_Cognac_Stuffing));
+                    gift.Add(i.FactoryMethod("ChupaChups", 25, 75, 70, 420, TypeOfCandy.Lollipop,Stuffing.Without_Stuffing));
                 }
 
                 if (i is CreatorOfChocolate)
                 {
-                    gift.Add(i.FactoryMethod("Alpen Gold", 100, 115, 250, 450, TypeOfChocolate.Milk,DriedFruits.ContainsPrune,75,VariantsOfChocolateProducts.PorousChocolate));
-                    gift.Add(i.FactoryMethod("Алёнка", 150, 115, 250, 450, TypeOfChocolate.Milk,DriedFruits.ContainsNut,50, VariantsOfChocolateProducts.ConfectioneryTiles));
+                    gift.Add(i.FactoryMethod("Alpen Gold", 100, 115, 250, 450, TypeOfChocolate.Milk,DriedFruits.Contains_Prune,75,VariantsOfChocolateProducts.Porous_Chocolate));
+                    gift.Add(i.FactoryMethod("Алёнка", 150, 115, 250, 450, TypeOfChocolate.Milk,DriedFruits.Contains_Nut,50, VariantsOfChocolateProducts.Confectionery_Tiles));
                 }
 
                 if (i is CreatorOfHalva)
                 {
-                    gift.Add(i.FactoryMethod("В Шоколаде с орехами", 200, 115, 250, 450, TypeOfHalva.NutButterBased,WithNuts.WithCrushedNut));
-                    gift.Add(i.FactoryMethod("халва", 100, 115, 250, 450, TypeOfHalva.TahiniBased,WithNuts.WithoutNuts));
-                    gift.Add(i.FactoryMethod("В Шоколаде ", 200, 115, 250, 450, TypeOfHalva.NutButterBased, WithNuts.WithPeanuts));
-                    gift.Add(i.FactoryMethod(" с орехами", 100, 115, 250, 450, TypeOfHalva.TahiniBased, WithNuts.WithWholeNut));
+                    gift.Add(i.FactoryMethod("В Шоколаде с орехами", 200, 115, 250, 450, TypeOfHalva.Nut_Butter_Based,WithNuts.With_Crushed_Nut));
+                    gift.Add(i.FactoryMethod("халва", 100, 115, 250, 450, TypeOfHalva.Tahini_Based,WithNuts.Without_Nuts));
+                    gift.Add(i.FactoryMethod("В Шоколаде ", 200, 115, 250, 450, TypeOfHalva.Nut_Butter_Based, WithNuts.With_Peanuts));
+                    gift.Add(i.FactoryMethod(" с орехами", 100, 115, 250, 450, TypeOfHalva.Tahini_Based, WithNuts.With_Whole_Nut));
                 }
 
                
 
                 if (i is CreatorOfMarshmallows)
                 {
-                    gift.Add(i.FactoryMethod("Alpen Gold", 150, 115, 250, 450, TypeOfMarshmallows.WhitePink,DriedFruits.ContainsPeanut,Thickener.AgarAgar));
-                    gift.Add(i.FactoryMethod("Красный пищевик", 100, 115, 250, 450, TypeOfMarshmallows.Vanilla,DriedFruits.ContainsDriedApricots,Thickener.Gelatin));
+                    gift.Add(i.FactoryMethod("Alpen Gold", 150, 115, 250, 450, TypeOfMarshmallows.White_Pink,DriedFruits.Contains_Peanut,Thickener.AgarAgar));
+                    gift.Add(i.FactoryMethod("Красный пищевик", 100, 115, 250, 450, TypeOfMarshmallows.Vanilla,DriedFruits.Contains_Dried_Apricots,Thickener.Gelatin));
                 }
                 
             }
 
-            gift.Sort();
+            gift.SortSweetnessByWeight();
             gift.ShowItems();
-
-            Console.WriteLine();
-            foreach (var items in gift.FindCandyBySugar(50, 100))
+            Console.WriteLine("FindSweetnessBySugar ");
+            Console.WriteLine("Enter min value Sugar" );
+            var min = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Enter max value Sugar");
+            var max = Convert.ToInt32( Console.ReadLine());
+            foreach (var items in gift.FindSweetnessBySugar(min, max))
             {
                 Console.WriteLine("Name: {0}, SugarPerUnit: {1}", items.Name, items.SugarPerUnit);
             }

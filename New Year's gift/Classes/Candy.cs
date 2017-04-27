@@ -22,7 +22,7 @@ namespace New_Year_s_gift.Classes
         public override string GetTypeOfSweetness => "Candy";
         public override string TypeOfIngredients => string.Format("Type Of Candy: {0}", TypeOfCandy);
         public override string GetItemInfo => string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
-                        ",  {5} ", Name, Weight, Price, SugarPerUnit, CaloriPerUnit, TypeOfCandy,Stuffing);
+                        ",  {5} ", Name, Weight, Price, SugarPerUnit, CaloriPerUnit,Stuffing);
 
        
     }

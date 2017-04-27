@@ -10,11 +10,12 @@ namespace New_Year_s_gift.Interfaces
 
     public interface IGift
     {
-        IEnumerable<Sweet> Items { get; }
+        IEnumerable<ISweetness> Items { get; }
         string GiftName { get; }
         void Add(Sweet sweets);
         double GiftWeight();
-        void Sort();
-        IEnumerable<Sweet> FindCandyBySugar(int min, int max);
+        IEnumerable<ISweetness> SortSweetnessByWeight();
+        //void SortSweetnessByWeight();
+        IEnumerable<ISweetness> FindSweetnessBySugar(int min, int max);
     }
 }

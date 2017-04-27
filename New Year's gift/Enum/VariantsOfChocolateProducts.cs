@@ -8,8 +8,8 @@ namespace New_Year_s_gift.Enum
 {
     public enum VariantsOfChocolateProducts
     {
-        ConfectioneryTiles,
+        Confectionery_Tiles,
         Chocolate,
-        PorousChocolate
+        Porous_Chocolate
     }
 }

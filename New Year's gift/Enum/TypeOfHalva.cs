@@ -2,11 +2,11 @@
 {
    public enum TypeOfHalva
     {
-        FlourBased,
-        NutButterBased,
-        VegetablesAndMilkBased,
-        TahiniBased,
-        SunflowerBased,
-        PeanutButterBased
+        Flour_Based,
+        Nut_Butter_Based,
+        Vegetables_And_Milk_Based,
+        Tahini_Based,
+        Sunflower_Based,
+        Peanut_Butter_Based
     }
 }
