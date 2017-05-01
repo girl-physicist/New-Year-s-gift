@@ -15,14 +15,6 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="New_Year_s_gift.Classes.Gift">
-    <Position X="12" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAIAAAACAAAAAgQAAAAAAAAAAAAAAIAQAAAAAA=</HashCode>
-      <FileName>Classes\Gift.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="New_Year_s_gift.Classes.Halva">
     <Position X="4.75" Y="1" Width="1.5" />
     <TypeIdentifier>
@@ -43,6 +35,14 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAEAAAAAAIAAAQBACAAAAACAAAAAAAAAAQ=</HashCode>
       <FileName>Classes\Sweet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="New_Year_s_gift.Classes.Gift">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAACQgAAAAAAAAAAAAAAIAAAAIAUAAQAAA=</HashCode>
+      <FileName>Classes\Gift.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

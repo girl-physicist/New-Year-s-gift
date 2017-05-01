@@ -12,14 +12,15 @@ namespace New_Year_s_gift
     {
         public static void ShowItems(this IGift gift)
         {
-            Console.WriteLine("{0} consist {1} elements", gift.GiftName, gift.GetCountOfSweet());
+            Console.WriteLine("{0}, consist {1} elements",gift.GiftName, gift.GetCountOfSweet);
             Console.WriteLine();
-            Console.WriteLine("GiftWeight: {0}", gift.GiftWeight());
+            Console.WriteLine("GiftWeight: {0}", gift.GiftWeight);
             Console.WriteLine();
             Console.WriteLine("/-------------------------------------------/");
             Console.WriteLine();
-            foreach (var i in gift.Items)
-            {
+           
+                foreach (var i in gift.Items)
+                {
                 Console.WriteLine("{0}, {1}, {2}", i.GetTypeOfSweetness, i.TypeOfIngredients, i.GetItemInfo);
             }
             Console.WriteLine();
@@ -43,6 +44,8 @@ namespace New_Year_s_gift
             {
                 Console.WriteLine("Name: {0}, SugarPerUnit: {1}", items.Name, items.SugarPerUnit);
             }
+
+           
             Console.ReadKey();
         }
     }
