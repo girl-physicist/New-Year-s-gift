@@ -39,7 +39,6 @@ namespace New_Year_s_gift
 
             gift.RemoveSweet(Marshmallows1);
 
-            gift.SortSweetnessByWeight();
             gift.ShowItems();
         }
     }
