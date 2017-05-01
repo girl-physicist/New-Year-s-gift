@@ -59,10 +59,10 @@
     <Compile Include="Interfaces\IDriedFruits.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweetness.cs" />
-    <Compile Include="Show.cs" />
+    <Compile Include="Demo\Show.cs" />
     <Compile Include="Enum\TypeOfCandy.cs" />
     <Compile Include="Enum\TypeOfChocolate.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Demo\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

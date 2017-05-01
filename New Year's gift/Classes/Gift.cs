@@ -32,9 +32,10 @@ namespace New_Year_s_gift.Classes
         {
             sweetnessitems.Remove(sweet);
         }
-        public int GetCountOfSweet()
+        public int GetCountOfSweet
         {
-            return sweetnessitems.Count();
+            get { return sweetnessitems.Count(); }
+           
         }
         public double GiftWeight
         {

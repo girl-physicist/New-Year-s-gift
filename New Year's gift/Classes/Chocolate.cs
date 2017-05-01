@@ -28,7 +28,7 @@ namespace New_Year_s_gift.Classes
         //{
         //    get { return "Chocolate"; }
         //}
-        public override string TypeOfIngredients => string.Format("Type Of Chocolate: {0}", TypeOfChocolate);
+        public override string TypeOfIngredients => string.Format("{0}", TypeOfChocolate);
         public override string GetItemInfo => string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
                     ",  {5} {6}% cocoa products, {7}", Name, Weight, Price, SugarPerUnit, CaloriPerUnit
             , VariantsOfChocolateProducts, PercentageOfCocoaProducts, DriedFruits);
