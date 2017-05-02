@@ -21,7 +21,7 @@ namespace New_Year_s_gift
            
                 foreach (var i in gift.Items)
                 {
-                Console.WriteLine("{0}, {1}, {2}", i.GetTypeOfSweetness, i.TypeOfIngredients, i.GetItemInfo);
+                Console.WriteLine("{0}, {1}, {2}", i.TypeOfSweetness, i.TypeOfIngredients, i.ItemInfo);
             }
             Console.WriteLine();
             Console.WriteLine("/-------------------------------------------/");
@@ -30,7 +30,7 @@ namespace New_Year_s_gift
             var temp = gift.SortSweetnessByWeight();
             foreach (var i in temp)
             {
-                Console.WriteLine("{0}, {1}, {2}", i.GetTypeOfSweetness, i.Name, i.Weight);
+                Console.WriteLine("{0}, {1}, {2}", i.TypeOfSweetness, i.Name, i.Weight);
             }
             Console.WriteLine();
             Console.WriteLine("/-------------------------------------------/");

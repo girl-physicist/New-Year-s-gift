@@ -13,8 +13,8 @@ namespace New_Year_s_gift.Interfaces
         string Name { get; }
         double CaloriPerUnit { get; }
         double Price { get; }
-        string GetTypeOfSweetness { get; }
-        string GetItemInfo { get; }
+        string TypeOfSweetness { get; }
+        string ItemInfo { get; }
         string TypeOfIngredients { get; }
     }
 
