@@ -10,6 +10,7 @@ namespace New_Year_s_gift.Classes
 {
     class Candy : Sweet
     {
+        //реализовать инкапсуляцию
         public TypeOfCandy TypeOfCandy;
         public Stuffing Stuffing;
         public Candy(string name, double weight, double price, double sugar, double calories
