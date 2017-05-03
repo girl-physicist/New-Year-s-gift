@@ -21,6 +21,7 @@ namespace New_Year_s_gift.Classes
         }
         public override string TypeOfSweetness => "Candy";
         public override string TypeOfIngredients => string.Format("{0}", TypeOfCandy);
+        //добавить вспомогательный класс, в нем реализовать передачу необходимых параметров
         public override string ItemInfo => string.Format(" {0},  weight: {1}, price: {2}, sugar: {3}, calories: {4}" +
                         ",  {5} ", Name, Weight, Price, SugarPerUnit, CaloriPerUnit,Stuffing);
 

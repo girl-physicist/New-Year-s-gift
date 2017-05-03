@@ -17,7 +17,6 @@ namespace New_Year_s_gift.Classes
             : base(name, weight, price, sugar, calories)
         {
             TypeOfHalva = typeOfHalva;
-
             WithNuts = withNuts;
         }
         public override string TypeOfSweetness => "Halva";

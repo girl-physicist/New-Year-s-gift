@@ -16,7 +16,7 @@ namespace New_Year_s_gift.Interfaces
         string GiftName { get; }
         void AddSweet(Sweet sweets);
         void RemoveSweet(Sweet sweet);
-        int GetCountOfSweet { get; }
+        int CountOfSweet { get; }
         double GiftWeight { get; }
     }
 }

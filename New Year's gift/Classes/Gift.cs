@@ -32,10 +32,9 @@ namespace New_Year_s_gift.Classes
         {
             sweetnessitems.Remove(sweet);
         }
-        public int GetCountOfSweet
+        public int CountOfSweet
         {
             get { return sweetnessitems.Count(); }
-           
         }
         public double GiftWeight
         {
@@ -47,17 +46,20 @@ namespace New_Year_s_gift.Classes
                 }
                 else
                 {
+                    //реализовать обработку исключения
                     throw new InvalidOperationException("Container in Gift cannot be null");
                 }
             }
         }
         public IEnumerable<ISweetness> SortSweetnessByWeight()
         {
+            //сделать универсальным (можно добавить вспомогательный класс)
             var temp = sweetnessitems.OrderBy(x => x.Weight).ToArray();
             return temp;
         }
         public IEnumerable<ISweetness> FindSweetnessBySugar(int min, int max)
         {
+            //сделать универсальным (можно добавить вспомогательный класс)
             return sweetnessitems.Where(x => (x.SugarPerUnit >= min) && (x.SugarPerUnit <= max)).ToList();
         }
     }

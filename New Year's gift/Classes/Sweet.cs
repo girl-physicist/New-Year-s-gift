@@ -37,6 +37,7 @@ namespace New_Year_s_gift.Classes
             SugarPerUnit = sugar;
             CaloriPerUnit = calories;
         }
+        //передавать через конструктор
         public abstract string TypeOfSweetness { get; }
         public abstract string ItemInfo { get; }
         public abstract string TypeOfIngredients { get; }

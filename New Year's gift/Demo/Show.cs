@@ -12,7 +12,7 @@ namespace New_Year_s_gift
     {
         public static void ShowItems(this IGift gift)
         {
-            Console.WriteLine("{0}, consist {1} elements", gift.GiftName, gift.GetCountOfSweet);
+            Console.WriteLine("{0}, consist {1} elements", gift.GiftName, gift.CountOfSweet);
             Console.WriteLine();
             Console.WriteLine("Gift Weight: {0}", gift.GiftWeight);
             Console.WriteLine();
